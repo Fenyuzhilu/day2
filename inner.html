@@ -13,11 +13,42 @@
 <body>
     <main class="main">
 
-        <header class="header">df</header>
+        <header class="header">
+            <ul>
+                <li> <span><img src="img/img1.png" alt=""></span>
+                    <p>截图</p>
+                </li>
+                <li> <span><img src="img/img2.png" alt=""></span>
+                    <p>截图</p>
+                </li>
+                <li> <span><img src="img/img3.png" alt=""></span>
+                    <p>截图</p>
+                </li>
+                <li> <span><img src="img/img4.png" alt=""></span>
+                    <p>截图</p>
+                </li>
+            </ul>
+        </header>
         <article class="article">df</article>
         <footer class="footer">df</footer>
     </main>
 
 </body>
+<script>
+    var btn = document.querySelectorAll('span');
+    var article = document.querySelector('article')
+        // var btn2 = document.querySelectorAll('span')[1];
+        // var btn3 = document.querySelectorAll('span')[2];
+        // var btn4 = document.querySelectorAll('span')[3];
+    for (var i = 0; i < btn.length; i++) {
+
+        (function(i) {
+            btn[i].onclick = function() {
+                article.classList = "article " + 'active' + i
+            }
+
+        })(i)
+    }
+</script>
 
 </html>

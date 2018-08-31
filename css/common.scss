@@ -1,4 +1,4 @@
-$baseline-px:37.5px;
+$baseline-px:75px;
 @function px2rem ($px-values) {
     $baseline-rem: $baseline-px / 1rem * 1;
     $px-values: $px-values / $baseline-rem;
